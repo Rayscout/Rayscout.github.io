@@ -18,15 +18,15 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="这是第一个example： 这是第二个example ： 这是第三个example：">
+        <meta name="description" content="这是第一个example： 这是第二个example ： 这是第三个example： 第四个：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Calculus">
 <meta property="og:url" content="https://rayscout.github.io/2024/09/24/Calculus/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这是第一个example： 这是第二个example ： 这是第三个example：">
+<meta property="og:description" content="这是第一个example： 这是第二个example ： 这是第三个example： 第四个：">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-09-24T08:32:28.000Z">
-<meta property="article:modified_time" content="2024-09-24T09:27:28.919Z">
+<meta property="article:modified_time" content="2024-09-24T09:35:44.540Z">
 <meta property="article:author" content="Ray Scout">
 <meta property="article:tag" content="Mathematics">
 <meta name="twitter:card" content="summary">
@@ -531,8 +531,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-24 17:27:28</span>
-            <span class="mobile">2024-09-24 17:27:28</span>
+            <span class="desktop">2024-09-24 17:35:44</span>
+            <span class="mobile">2024-09-24 17:35:44</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -566,7 +566,7 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p> 这是第一个example：<object data="/Calculus/Calculus.pdf" type="application/pdf" width="100%" height="877px"></object><br> 这是第二个example ：<object data="./Calculus/Calculus.pdf" type="application/pdf" width="100%" height="877px"><br> 这是第三个example：<iframe src="/Calculus/Calculus.pdf" width="100%" height="877px"></iframe></p>
+            <p> 这是第一个example：<object data="/Calculus/Calculus.pdf" type="application/pdf" width="100%" height="877px"></object><br> 这是第二个example ：<object data="./Calculus/Calculus.pdf" type="application/pdf" width="100%" height="877px"><br> 这是第三个example：<iframe src="/Calculus/Calculus.pdf" width="100%" height="877px"></iframe><br> 第四个：<object data="/2024/09/24/Calculus/Calculus.pdf" type="application/pdf" width="100%" height="877px"></object></p>
 
         </div>
 
@@ -581,7 +581,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-09-24 17:27:28
+                    :</strong> 2024-09-24 17:35:44
             </li>
         
         <li>
@@ -640,17 +640,46 @@
 
         
             <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                if (hexo-config('comment.enable') == true && hexo-config('comment.system') != "") {
-  if (hexo-config('comment.system') == "waline") {
-    @require "./waline.styl"
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
 
-  } else if (hexo-config('comment.system') == "gitalk") {
-    @require "./gitalk.styl"
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
 
-  } else if (hexo-config('comment.system') == "twikoo") {
-    @require "./twikoo.styl"
-  }
-}
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
             </div>
         
     </div>
